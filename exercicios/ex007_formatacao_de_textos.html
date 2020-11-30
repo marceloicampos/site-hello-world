@@ -4,53 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/pages.css">
     <title>Formatação de Textos</title>
-    <style>
-        a {
-            text-decoration: none;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        a:hover {
-			text-decoration: underline;
-		}
-    </style>
 </head>
 <body>
     <h1>Principais formatações</h1>
-    <p><a href="../index.html">voltar para home</a></p>
+    <p><a href="../index.html">Voltar para Home</a></p>
     <p><a href="./html4.html">Site em html4 em DESUSO</a></p>
     <p><a href="./html5.html">Site em HTML5 com Semântica</a></p>
     <hr>
-    Negrito / Destaque
-    Nesta frase temos um termo em negrito usando a tag B (não semântica).
     
-    Nesta frase, tenho um termo em destaque usando a tag STRONG (semântica).
+    <h2>Negrito / Destaque</h2>
+
+    <p>Nesta frase temos um <b>termo em negrito</b> usando a tag B (não semântica então não faz sentido usar a tag B).</p>
+
+    <p>Nesta frase, tenho um <strong>termo em destaque</strong> usando a tag STRONG (semântica).</p>
     
-    Itálico / Ênfase
-    Nesta frase, temos um termo em itálico usando a tag I (não semântica).
+    <h2>Itálico / Ênfase</h2>
+
+    <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag I (não semântica então não faz sentido usar  tag I).</p>
     
-    Nesta frase, temos um termo em ênfase usando a tag EM (semântica).
+    <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag EM (semântica).</p>
     
-    Texto marcado
-    Podemos criar também um texto marcado usando a tag MARK.
+    <h2>Texto marcado</h2>
     
-    E no outro parágrafo, temos outro texto marcado no final.
+    <p>Podemos criar também um <mark>texto marcado</mark> usando a tag MARK.</p>
     
-    Texto grande e pequeno
-    Estamos criando um texto grande e um texto pequeno nesse parágrafo.
+    <p>E neste outro parágrafo, temos outro <mark style="background-color:lime; color: brown;">texto marcado</mark> com parâmetro style em css dentro da própria tag mark para mudar a cor do mark e do texto que está marcado.</p>
     
-    Texto deletado
-    Podemos marcar um texto como excluído para indicar que ele deve ser lido, mas não considerado.
+    <h2>Texto grande e pequeno</h2>
     
-    Texto inserido
-    Podemos marcar um texto como inserido para dar uma ênfase e indicar que ele foi adicionado depois.
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse parágrafo. NOTA: tag BIG é obsoleta, porém a tag SMALL ainda é atual, pois a exemplo podemos usar letra pequena com semântica para indicar uma nota de rodapé.</p>
     
-    Existe também o sublinhado com a tag U (não semântica)
+    <h2>Texto apagado</h2>
     
-    Texto sobrescrito
-    Para inserir coisas do tipo x20+3
+    <p>Podemos marcar um <del>texto como excluído</del> para indicar que ele deve ser lido, mas não considerado, usando a tag DEL (semântica).</p>
     
-    Texto subscrito
-    Para inserir coisas do tipo H2O
+    <h2>Texto inserido</h2>
+
+    <p>Podemos marcar um <ins>texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois, usando a tag INS (semântica).</p>
+    
+    <p>Existe também o <u>sublinhado</u> com a tag U (não semântica então não faz sentido usar a tag U).</p>
+    
+    <h2>Texto sobrescrito</h2>
+
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3 usamos a tag SUP.</p>
+    
+    <h2>Texto subscrito</h2>
+
+    <p>Para inserir coisas do tipo H<sub>2</sub>O usamos a tag SUB</p>
 </body>
 </html>
