@@ -87,7 +87,7 @@ Terminou a tabela
 
 ## >>>>>> *Comandos*
 
-FICA ENTRE três crases ```comand (input)```
+FICA ENTRE três crases ```command (input)```
 
 ## >>>>>> *Emoji*
 
