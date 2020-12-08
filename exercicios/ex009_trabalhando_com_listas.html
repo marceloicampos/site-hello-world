@@ -11,54 +11,90 @@
     <h1>Trabalhando com Listas em HTML5</h1>
     <p><a href="../index.html">Voltar para Home</a></p>
     <hr>
-    <h2>Listas Ordenadas</h2>
-    Acordar
-    Ligar para o João
-    Tomar café
-    Escovar os dentes
-    Ir para a faculdade
-    Almoçar
-    Ir para o trabalho
-    Voltar para casa
-    Jantar
-    Dormir
-    <h2>Listas não Ordenadas</h2>
-    Pão
-    Leite
-    Tomate
-    Alface
-    Manteiga
-    Arroz
-    Feijão
-    <h2>Minhas linguagens favoritas</h2>
-    Antigas
-    Clipper
-    Visual Basic
-    Fortran
-    Delphi
-    Novas
-    PHP
-    Python
-    JavaScript
-    Kotlin
+    <h2>Listas Ordenadas - OL</h2>
+    <ol type="1" start="3">
+        <li> a TAG <strong>&lt;ol&gt;</strong> cria Lista Ordenadas.
+        <li> o PARÂMETRO <strong>type</strong> mostra a lista por tipos que podem ser:
+        <li> 1 (números - PADRÃO); A (letras maiúsculas) ; a (letras minúsculas); I (algarísmos romanos maiúsculos); i (algarísmos romanos minúsculos).
+        <li> o PARÂMETRO <strong>start</strong> indica onde a ordem da lista deve começar, nesse caso indiquei o início em 3.
+        <li> os itens de listas são criados pela TAG <strong>&lt;li &gt;</strong>.
+        <li>NOTA: a partir do html5 o fechamento dos items de listas (pela TAG &lt;li&gt;) são opcionais.
+        <li>NOTA: na boa prática devemos indicar o PARÂMETRO type na CSS usando a propriedade list-style-type, pois as formatações são representadas dentro da CSS. Esta regra vale tanto para as OL como para UL. 
+        <li>Voltar para casa
+        <li>Jantar
+        <li>Dormir
+    </ol>
+    <h2>Listas não Ordenadas - UL</h2>
+    <ul type="disc">
+        <li>a TAG <strong>&lt;ul&gt;</strong> cria Lista Não Ordenadas.</li>
+        <li>o PARÂMETRO <strong>type</strong> mostra lista por tipos que podem ser:</li>
+        <li> disc (PADRÃO); circle ; square, no caso usei o disc.</li>
+        <li>NOTA: geralmente os menus dos sites são criados por listas não ordenadas. MUITO IMPORTANTE SABER ESSE TIPO DE CONSTRUÇÃO.</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
+    <h2>Minhas linguagens favoritas - Misturando Listas OL e UL</h2>
+    <ol type="1">
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper
+            <li>Visual Basic
+            <li>Fortran
+            <li>Delphi
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="5">
+            <li>PHP
+            <li>Python
+            <li>JavaScript
+            <li>Kotlin
+        </ol>
+    </ol>
     <h2>Meus jogos favoritos</h2>
-    NES
-    Mario Bros
-    Mario Bros 3
-    Mario: Lost Levels
-    Ninja Gaiden
-    SNES
-    Mario
-    Donkey Kong
-    PlayStation
-    Final Fantasy
-    Castlevania
-    <h2>Lista de Definições</h2>
-    HTML
-    Linguagem de marcação para a criação do conteúdo de um site.
-    CSS
-    Linguagem de marcação para a criação do design de um site.
-    JavaScript
-    Linguagem de programação para a criação de interatividade de um site.
+    <ol type="a" start="1">
+        <li>NES
+        <ul type="circle">
+            <li>Mario Bros
+            <ol>
+                <li>Mario Bros 3
+                <li>Mario: Lost Levels
+            </ol>
+            <li>Ninja Gaiden
+        </ul>
+        <li>SNES
+        <ul type="disc">
+            <li>Mario
+            <li>Donkey Kong
+        </ul>
+        <li>PLAYSTATION 2
+        <ul type="square">
+            <li>Final Fantasy
+            <li>Castlevania
+        </ul>
+    </ol>
+    <h2>Lista de Definições usando a TAG &lt;dl&gt; - NOTA: funciona com um dicionário com um termo &lt;dt&gt; e a definição do termo &lt;dd&gt;</h2>
+    <dl>
+        <dt>Termo</dt>
+        <dd>Descrição</dd>
+        <dt>
+            HTML
+        </dt>
+        <dd>
+            Linguagem de marcação para a criação do conteúdo de um site.
+        </dd>
+        <dt>
+            CSS
+        </dt>
+        <dd>
+            Linguagem de marcação para a criação do design de um site.
+        </dd>
+        <dt>
+            JavaScript
+        </dt>
+        <dd>
+            Linguagem de programação para a criação de interatividade de um site.
+        </dd>
+    </dl>
 </body>
 </html>
