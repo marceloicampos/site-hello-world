@@ -1,11 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/pages.css">
+    <title>Desafio da Imagem Flexibilizada</title>
 </head>
 <body>
-    Flex
+    <h1>Desafio da Imagem Flex</h1>
+    <p><a href="../index.html">Voltar para Home</a></p>
+    <hr>
+    <h2>Imagens Flexíveis em HTML5</h2>
+    <p>Você está vendo a paisagem completa? Experimente ampliar o tamanho da sua janela para aproveitar a melhor experiência do visual da paisagem ou reduza o tamanho da janela para cortar automaticamente a imagem.</p>
+    <!-- atalho vscode para source em picture source:media:type-->
+    <div>
+        <picture>
+            <source media="(max-width: 750px)" srcset="./d007_imagens/paisagem-p.png" type="image/png">
+            <source media="(max-width: 1250px)" srcset="./d007_imagens/paisagem-m.png" type="image/png">
+                <img src="./d007_imagens/paisagem-g.png" alt="foto de paisagem">
+        </picture>
+    </div>
 </body>
 </html>

@@ -1,17 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/pages.css">
+    <title>Vídeos</title>
 </head>
 <body>
-Inserindo vídeos hospedados localmente
+    <h1>Trabalhando com Vídeos</h1>
+    <p><a href="../index.html">Voltar para Home</a></p>
+    <hr>
+    <h2>Inserindo vídeos hospedados localmente</h2>
+    
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
 
-Este vídeo está hospedado no meu próprio servidor.
+    <video width="640" height="360" controls poster="./ex012_imagens/limoes-capa.png">
+        <source src="../exercicios/ex012_midia/meu-video.mp4" type="video/mp4">
+        <source src="../exercicios/ex012_midia/meu-video.m4v" type="video/m4v">
+        <source src="../exercicios/ex012_midia/meu-video.webm" type="video/webm">
+        <source src="../exercicios/ex012_midia/meu-video.ogv" type="video/ogv">
+        Desculpa, seu navegador não suporta vídeos incorporados, mas você pode <a href="../exercicios/ex012_midia/meu-video.mp4"  download="meu-video.mp4" type="video/mp4">baixá-lo</a> e assistir pelo seu reprodutor de vídeo favorito!
+    </video>
+    
+    <h2>Inserindo vídeos do YouTube</h2>
+    
+    <p>Este vídeo está hospedado no Youtube.</p>
 
-Inserindo vídeos do YouTube
+    <iframe src="https://www.youtube.com/embed/eF9Qoc6p_4Q" width="640" height="360" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Inserindo vídeos do Vimeo
+    <h2>Inserindo vídeos do Vimeo</h2>
+
+    <p>Este vídeo está hospedado no Vimeo.</p>
+
+    <iframe src="https://player.vimeo.com/video/197093965?byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+
 </body>
 </html>
