@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/pages.css">
+    <title>Tabelas</title>
+</head>
+<body>
+    <h1>Trabalhando com Tabelas</h1>
+    <p><a href="../index.html">Voltar para Home</a></p>
+    <hr>
+    <h2>Tabelas ou TAG &lt;table&gt;</h2>
+        <ul>
+            <p>Prós</p>
+            <li> Visualização de dados via linhas e colunas
+            <li> Boa acessibilidade para leitura de dados
+        </ul>
+        <ul>
+            <p>Contras</p>
+            <li> Pouco flexível
+            <li> Precisa de estilização para melhorar o visual
+        </ul>
+        <ul>
+            <p>NÃO USAR</p>
+            <li> Para criar seu layout
+        </ul>
+    <h2>Estruturas de Tabela</h2>
+    <p>&lt;tr&gt; ou table row -> linha de tabela</p>
+    <p>&lt;th&gt; ou table head -> cabeça da tabela</p>
+    <p>&lt;td&gt; ou table data -> dado da tabela</p>
+        <table>
+            <caption>Pessoas por Idades</caption>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Marcelo</td>
+                    <td>40 anos</td>
+                </tr>
+                <tr>
+                    <td>Eduarda</td>
+                    <td>10 anos</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td>2 Pessoas</td>
+                </tr>
+            </tfoot>
+        </table>
+        <h2>Tabela Complexas</h2>
+        <table>
+
+            <colgroup>
+                <col>
+                <col span="2" style="background-color: lightcoral;">
+                <col span="2" style="background-color: lightseagreen ;">
+            </colgroup>
+
+            <caption>produtos PRODUZIDOS X VENDIDOS por Loja</caption>
+            <thead>
+                <tr>
+                    <th rowspan="2"></th>
+                    <th colspan="2" scope="colgroup">Loja Afonso Pena</th>
+                    <th colspan="2" scope="colgroup">Loja Antonio Bandeira</th>
+                </tr>
+                <tr>
+                    <th scope="col">Produzidos AP</th>
+                    <th scope="col">Vendidos AP</th>
+                    <th scope="col">Produzidos AB</th>
+                    <th scope="col">Vendidos AB</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Rodos</th>
+                    <td>50</td>
+                    <td>30</td>
+                    <td>20</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <th scope="row">Baldes</th>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>30</td>
+                    <td>25</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row">Total</th>
+                    <td>60</td>
+                    <td>40</td>
+                    <td>50</td>
+                    <td>45</td>
+                </tr>
+            </tfoot>
+        </table>
+</body>
+</html>
