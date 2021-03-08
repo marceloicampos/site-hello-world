@@ -1,2 +1,28 @@
 @charset "UTF-8";
 
+body {
+    background-color: #222222;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #4751C5;
+}
+
+h2 {
+    color:#00ADC1;
+}
+
+p {
+    color: #ffffff;
+}
+
+a {
+    color:#917C78;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
