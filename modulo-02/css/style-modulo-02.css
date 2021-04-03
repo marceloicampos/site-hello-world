@@ -2,6 +2,7 @@
 
 body {
     background-color: #222222;
+    font-family: Arial, Verdana, Helvetica, sans-serif;
 }
 
 h1 {
@@ -18,7 +19,6 @@ h3 {
 
 p {
     color: #ffffff;
-    font-family: Arial, Verdana, Helvetica, sans-serif;
     font-size: 1em;
     /* Arial, Verdana e Helvetica são sans serif */
     /* font-size: 16px;*/

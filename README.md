@@ -1,7 +1,10 @@
-# site-hello-world
-Site Hello World
+# Aulas, Anotações, Exercícios e Desafios
+## Curso HTML5 e CSS3 do CeV
+## Projeto site-hello-world
 
-## >>>>>> *Syntax Markdown*
+Repositório com aulas e atividades do **Curso de HTML5 e CCS3**.
+
+## >>>>>> *Markdown Syntax*
 
 LINE
 ***
