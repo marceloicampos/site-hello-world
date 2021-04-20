@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../../css/style-modulo-02.css"> -->
+    <title>Pseudo Classes</title>
+    <style>
+        div {
+            display: inline-block;
+            background-color: lightgray;
+            border: 1px solid black;
+            text-align: justify;
+            height: 100px;
+            width: 500px;
+            
+            padding: 3px;
+            margin: 3px;
+        }
+        div:hover {
+            background-color: yellow;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            color: white;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exercício 023 - Pseudo Classes em CSS3</h1>
+    <p><a href="../../index.html">Voltar para Módulo 02</a></p>
+    <hr>
+
+    <h2>Trabalhando com Pseudo Classes</h2>
+    <p>
+        <ul>
+            <li># é id</li>
+            <li>. é class</li>
+            <li>: é pseudo classe, onde essas devem estar relacionadas ao estado de um elemento ou de uma class, no exemplo seguir usamos o hover e ao passar o mouse por cima a cor muda para amarelo.</li>
+        </ul>
+    </p>
+
+    <div id="d1">
+        A tag div é um elemento de divisão que gera um container para conteúdo de flux, que de certa forma não representa nada.
+    </div>
+
+    <div id="d2">
+        Ele pode ser utilizado para agrupar elementos para fins de estilos usando class ou id, ou porque eles compartilham valores de atributos, como lang.
+    </div>
+
+    <div id="d3">
+        Ele deve ser utilizado somente quando não tiver outro elemento de semântica tal como article ou nav.
+        <p>Texto escondido por pseudo classe usando o hover mudamos a css para esse texto escondido.</p>
+    </div>
+    <hr>
+    <footer>
+        <p>Estudos em HTML5 e CSS3 por <a href="https://marceloicampos.com/about" target="_blank">Marcelo Ildefonso Campos</a></p>
+    </footer>
+</body>
+
+</html>
