@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../../css/style-modulo-02.css"> -->
+    <title>Pseudo Elementos</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: #ff0000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited {
+            color: #8b0000;
+        }
+        a:hover {
+            color: #000000;
+            text-decoration: underline;
+        }
+        a:active {
+            color: #ffff00;
+        }
+        .especial::after {
+            content: ' [ Link ]';
+            text-decoration: none;
+            font-weight: normal;
+            color: #a9a9a9;
+        }
+        .especial::before {
+            content: '=> ';
+        }
+        a.especial {
+            color: #ffffff;
+            background-color: #8b0000;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exercício 024 - Pseudo Elementos</h1>
+    <p><a href="../../index.html">Voltar para Módulo 02</a></p>
+    <hr>
+
+    <h2>Personalizando Links em HTML</h2>
+    <ul>
+        <li><a href="https://github.com/marceloicampos" target="_blank">Meu GitHub</a></li>
+        <li><a href="https://marceloicampos.com/about" target="_blank" class="especial">Meu Canal no YouTube</a></li>
+        <li><a href="https://www.youtube.com/user/MICChannel79/playlists" target="_blank">Meu Site</a></li>
+        <li>PSEUDO CLASSES leva <strong>:</strong></li>
+        <li>PSEUDO ELEMENTOS leva <strong>::</strong></li>
+        <li>CHILDREN leva <strong>&gt;</strong></li>
+    </ul>
+    <hr>
+    <footer>
+        <p>Estudos em HTML5 e CSS3 por <a href="https://marceloicampos.com/about" target="_blank">Marcelo Ildefonso Campos</a></p>
+    </footer>
+</body>
+
+</html>
