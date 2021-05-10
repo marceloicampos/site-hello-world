@@ -12,12 +12,13 @@
 		<style>
 		body {
 			background-color: rgb(69, 69, 69);
-			font: 13pt Arial;
+			font-size: 13pt;
+			font-family: Arial, Helvetica, sans-serif;
 			text-align: justify;
 		}
 		main {
 			background-color: white;
-			width: 1000px;
+			max-width: 1000px;
 			padding: 20px;
 			margin: auto;
 			border-radius: 10px;
@@ -25,15 +26,29 @@
 		}
 		h1 {
 			color:darkgoldenrod;
+			border: 5px solid black;
+			padding: 10px;
+			text-align: center;
+			margin: 10px;
 		}
 		h2 {
 			color: rgb(125, 92, 8);
+			margin-left: 20px;
+		}
+		p {
+			margin-left: 20px;
+		}
+		img {
+			margin-left: 20px;
 		}
 		p#sobre {
-			font-family: Arial;
 			font-size: 13pt;
 			color: darkslateblue;
 			text-shadow: 1px 1px 1px gray;
+			font-weight: bold;
+		}
+		span#code {
+			color: darkslateblue;
 			font-weight: bold;
 		}
 		footer {
@@ -46,8 +61,13 @@
 	<h1> &#X1F310; SITE HELLO WORLD</h1>
 	<h2>Quem sou eu?</h2>
 	<img src="./desafios/d005_imagens/celo_cris_png_150.png" alt="foto marcelo campos e cristiane campos">
-	<p>Meu nome é <strong>Marcelo I Campos</strong>, sou estudante aficionado de HTML, CSS e JAVASCRIPT. Aprendendo (aos 40 anos de vida) a programar e desenvolver. Veja meus estudos nos links abaixo e obrigado!</p>
-	<p>- Criamos este parágrafo utilizando o Visual Studio Code instalado no Ubuntu 20.04 que estava rodando numa virtual machine o Virtual Box e efetuamos commit e o push via GitHub Desktop para linux clonado do Project Desktop do usuário Shiftkey.</p>
+
+	<div>
+		<!--A DIV É uma box-level, um conteúdo fica abaixo do outro em divisões separadas, assim como h1 a h6, p, main, header, nav, article, aside, footer, form, video e outras-->
+		<p>Meu nome é <strong>Marcelo I Campos</strong>, sou estudante aficionado de HTML, CSS e JAVASCRIPT. Aprendendo (aos 40 anos de vida) a programar e desenvolver. Veja meus estudos nos links abaixo e obrigado!</p>
+		<p>- Criamos este parágrafo utilizando o <span id="code">Visual Studio Code</span> instalado no Ubuntu 20.04 que estava rodando numa virtual machine o Virtual Box e efetuamos commit e o push via GitHub Desktop para linux clonado do Project Desktop do usuário Shiftkey.</p>
+		<!--A SPAN É uma in-level, um conteúdo fica ao lado do outro em divisões separadas, assim como a, code, small, strong, em, sup, sub, label, button, input, select-->
+	</div>
 	
 	<p id="sobre">
 		&gt; SOBRE quem sou eu <a href="./desafios/d005_desafio_social.html">CLIQUE AQUI</a>
@@ -55,13 +75,12 @@
 	<p>
 		<img src="./desafios/d005_imagens/icone_arroba.png" alt="ícone arroba de e-Mail"> Meu e-Mail marceloicampos@outlook.com &gt; &gt; &gt; <a href="mailto:marceloicampos@outlook.com"> mande um e-Mail pra mim clicando aqui</a>.
 	</p>
+
 	<h1> &#x1F4C1; MÓDULOS 02, 03, 04, 05 - EM ESTUDOS</h1>
 	<p>MÓDULO 02 - Desafios e Exercícios - <a href="./modulo-02/index.html">ACESSE AQUI</a> - TUDO MAIS BONITO</p>
 	<p>MÓDULO 03 - Desafios e Exercícios - <a href="">ACESSE AQUI</a> - EM CONSTRUÇÃO</p>
 	<p>MÓDULO 04 - Desafios e Exercícios - <a href="">ACESSE AQUI</a> - EM CONSTRUÇÃO</p>
 	<p>MÓDULO 05 - Desafios e Exercícios - <a href="">ACESSE AQUI</a> - EM CONSTRUÇÃO</p>
-
-	<hr>
 
 	<h1> &#x1F4C1; MÓDULO 01 - FINALIZADO</h1>
 	<h2> MÓDULO 01 - DESAFIOS CUMPRIDOS NO CURSO HTML CSS</h2>
@@ -92,7 +111,7 @@
 	<p>Exercício 014 - <a href="./exercicios/ex014_css_interno.html">CSS INTERNO</a></p>
 	<p>Exercício 015 - <a href="./exercicios/ex015_css_externo.html">CSS EXTERNO</a></p>
 
-	<h2> &#x1F63A; MEU MOUSE CAT - Nota: essa imagem é creative commons</h2>
+	<h2>MEU MOUSE CAT &#x1F63A; - Nota: essa imagem é creative commons</h2>
 	<img src="./imagens/pexels2.png" alt="gato preto">
 	</main>
     <footer>
