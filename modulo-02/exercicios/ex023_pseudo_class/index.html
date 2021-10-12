@@ -1,79 +1,151 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+    <head>
+        <meta name="description" content="Web tutorials" />
+        <meta name="keywords" content="HTML, CSS, JavaScript" />
+        <meta name="author" content="Marcelo Ildefonso Campos" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="../../../favicon.ico"
+            type="image/x-icon"
+        />
+        <!-- <link rel="stylesheet" href="../../css/style-modulo-02-pages.css" /> -->
+        <title>Pseudo Classes</title>
+        <style>
+            body {
+                margin-bottom: 96px;
+                background-color: #222222;
+                font-family: Arial, Helvetica, sans-serif;
+            }
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="../../css/style-modulo-02.css"> -->
-    <title>Pseudo Classes</title>
-    <style>
-        div {
-            display: inline-block;
-            background-color: lightgray;
-            border: 1px solid black;
-            text-align: justify;
-            height: 100px;
-            width: 500px;
-            
-            padding: 3px;
-            margin: 3px;
-        }
-        div:hover {
-            background-color: yellow;
-        }
+            h1 {
+                color: #4751c5;
+            }
 
-        div > p {
-            display: none;
-        }
+            h2 {
+                color: #00adc1;
+            }
 
-        div:hover > p {
-            display: block;
-            color: white;
-            background-color: green;
-        }
-        a {
-            color:#000000;
-            font-weight: bold;
-            text-decoration: none;
-        }
+            h3 {
+                color: #00adc1;
+            }
 
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
+            p {
+                color: #ffffff;
+                font-size: 1em;
+            }
 
-<body>
-    <h1>Exercício 023 - Pseudo Classes em CSS3</h1>
-    <p><a href="../../index.html">Voltar para Módulo 02</a></p>
-    <hr>
+            div {
+                display: inline-block;
+                background-color: lightgray;
+                border: 1px solid black;
+                text-align: justify;
+                height: 100px;
+                width: 480px;
+                padding: 3px;
+                margin-top: 3px;
+            }
 
-    <h2>Trabalhando com Pseudo Classes</h2>
-    <p>
+            div:hover {
+                background-color: yellow;
+            }
+
+            div > p {
+                display: none;
+            }
+
+            div:hover > p {
+                display: block;
+                color: white;
+                background-color: green;
+            }
+
+            a,
+            a:visited {
+                color: #ffffff;
+                font-weight: bolder;
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+            #foot {
+                text-align: center;
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                height: auto;
+                width: 100%;
+                background-color: #000000;
+                text-align: center;
+            }
+
+            #foot p {
+                color: #ffffff;
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 16px;
+                font-weight: normal;
+            }
+
+            #foot a {
+                color: #606060;
+                text-decoration: none;
+            }
+
+            #foot a:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Exercício 023 - Pseudo Classes em CSS3</h1>
+        <p><a href="./../../">Voltar para Módulo 02</a></p>
+        <hr />
+        <h2>Trabalhando com Pseudo Classes</h2>
         <ul>
             <li># é id</li>
             <li>. é class</li>
-            <li>: é pseudo classe, onde essas devem estar relacionadas ao estado de um elemento ou de uma class, no exemplo seguir usamos o hover e ao passar o mouse por cima a cor muda para amarelo.</li>
+            <li>
+                : é pseudo classe, onde essas devem estar relacionadas ao estado
+                de um elemento ou de uma class, no exemplo seguir usamos o hover
+                e ao passar o mouse por cima a cor muda para amarelo.
+            </li>
         </ul>
-    </p>
-
-    <div id="d1">
-        A tag div é um elemento de divisão que gera um container para conteúdo de flux, que de certa forma não representa nada.
-    </div>
-
-    <div id="d2">
-        Ele pode ser utilizado para agrupar elementos para fins de estilos usando class ou id, ou porque eles compartilham valores de atributos, como lang.
-    </div>
-
-    <div id="d3">
-        Ele deve ser utilizado somente quando não tiver outro elemento de semântica tal como article ou nav.
-        <p>Texto escondido por pseudo classe usando o hover mudamos a css para esse texto escondido.</p>
-    </div>
-    <hr>
-    <footer>
-        <p>Estudos em HTML5 e CSS3 por <a href="https://marceloicampos.com/about" target="_blank">Marcelo Ildefonso Campos</a></p>
-    </footer>
-</body>
-
+        <div id="d1">
+            A tag div é um elemento de divisão que gera um container para
+            conteúdo de fluxo, que de certa forma não representa nada, mas serve
+            para efetuar divisões no HTML.
+            <p>
+                Texto escondido por pseudo classe usando o hover mudamos a css
+                para esse texto escondido.
+            </p>
+        </div>
+        <div id="d2">
+            Ela pode ser utilizado para agrupar elementos para fins de estilos
+            usando class ou id, ou porque eles compartilham valores de
+            atributos, como lang.
+        </div>
+        <div id="d3">
+            Ela deve ser utilizada somente quando não tiver outros elementos de
+            semântica tal como article ou nav, pois as divisões main, article,
+            aside e ou nav dividem semanticamente a página.
+        </div>
+        <div id="foot">
+            <hr />
+            <footer>
+                <p>
+                    Estudos em HTML5, CSS3 E JAVASCRIPT por
+                    <a href="https://marceloicampos.com/about" target="_blank"
+                        >Marcelo Ildefonso Campos</a
+                    >
+                </p>
+            </footer>
+        </div>
+    </body>
 </html>

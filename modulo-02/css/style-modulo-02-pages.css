@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+body {
+    margin-bottom: 96px;
+    background-color: #222222;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #4751c5;
+}
+
+h2 {
+    color: #00adc1;
+}
+
+h3 {
+    color: #00adc1;
+}
+
+p {
+    color: #ffffff;
+    font-size: 1em;
+    /* Arial, Verdana e Helvetica são sans serif */
+    /* font-size: 16px;*/
+    /* Nota: há uma ordem de precedência, no caso acima o navegador primeiro escolhe a Arial, se não tiver a Verdana, senão a Helvetica e por último escolhe uma sans-serif genérica !*/
+}
+
+a,
+a:visited {
+    color: #ffffff;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.foot {
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    background-color: #000000;
+    text-align: center;
+}
+
+.foot p {
+    color: #ffffff;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.foot a {
+    color: #606060;
+    text-decoration: none;
+}
+
+.foot a:hover {
+    text-decoration: underline;
+}

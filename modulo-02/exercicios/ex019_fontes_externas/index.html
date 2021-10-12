@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/style-modulo-02.css">
-    <title>Fontes Extras ou Externas</title>
-    <style>
-        @font-face {
-            font-family: 'Love Larry';
-            src: 
-            url('../../fonts/love-larry-ttf.ttf')
-            format('truetype'),
-            url('../../fonts/love-larry-otf.otf')
-            format('opentype');
-            font-weight: normal;
-            font-style: normal;
-            /* 
+    <head>
+        <meta name="description" content="Web tutorials" />
+        <meta name="keywords" content="HTML, CSS, JavaScript" />
+        <meta name="author" content="Marcelo Ildefonso Campos" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="../../../favicon.ico"
+            type="image/x-icon"
+        />
+        <link rel="stylesheet" href="../../css/style-modulo-02-pages.css" />
+        <title>Fontes Extras ou Externas</title>
+        <style>
+            @font-face {
+                font-family: 'Love Larry';
+                src: url('../../fontes/love-larry-ttf.ttf') format('truetype'),
+                    url('../../fontes/love-larry-otf.otf') format('opentype');
+                font-weight: normal;
+                font-style: normal;
+                /* 
             Tipos de Format
             - opentype for otf
             - truetype for ttf
@@ -25,26 +29,34 @@
             - embedded-opentype
             - svg 
             */
-        }
-        h2 {
-            font-family: 'Love Larry', Times, serif;
-            font-size: 2em;
-            font-weight: normal;
-        }
-    </style>
-</head>
+            }
 
-<body>
-    <h1>Exercício 019 - Fontes Externas</h1>
-    <p><a href="../../index.html">Voltar para Módulo 02</a></p>
-    <hr>
-
-    <h2>Format Fonts with External or Extras Fonts</h2>
-    <p>Import External Fonts with @font-face and pass font-family and src. Put OTF and TTF files, some browsers use OTF others use TTF</p>
-    <hr>
-    <footer>
-        <p>Estudos em HTML5 e CSS3 por <a href="https://marceloicampos.com/about" target="_blank">Marcelo Ildefonso Campos</a></p>
-    </footer>
-</body>
-
+            h2 {
+                font-family: 'Love Larry', Times, serif;
+                font-size: 2em;
+                font-weight: normal;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Exercício 019 - Fontes Externas</h1>
+        <p><a href="./../../">Voltar para Módulo 02</a></p>
+        <hr />
+        <h2>Format Fonts with External or Extras Fonts</h2>
+        <p>
+            Import External Fonts with @font-face and pass font-family and src.
+            Put OTF and TTF files, some browsers use OTF others use TTF.
+        </p>
+        <div class="foot">
+            <hr />
+            <footer>
+                <p>
+                    Estudos em HTML5, CSS3 E JAVASCRIPT por
+                    <a href="https://marceloicampos.com/about" target="_blank"
+                        >Marcelo Ildefonso Campos</a
+                    >
+                </p>
+            </footer>
+        </div>
+    </body>
 </html>

@@ -1,32 +1,71 @@
 # Aulas, Anotações, Exercícios e Desafios
+
 ## Curso HTML5 e CSS3 do CeV
+
 ## Projeto site-hello-world
 
 Repositório com aulas e atividades do **Curso de HTML5 e CCS3**.
 
-## >>>>>> *Markdown Syntax*
+Html base para aulas de HTML5 e CSS3 verifique dentro do código README
+
+<!--
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta name="description" content="Web tutorials" />
+        <meta name="keywords" content="HTML, CSS, JavaScript" />
+        <meta name="author" content="Marcelo Ildefonso Campos" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="../../css/style-modulo-01-pages.css" />
+        <title>Título Página</title>
+    </head>
+    <body>
+        <h1>Título Geral</h1>
+        <p><a href="./../../">Voltar para Módulo 0</a></p>
+        <hr />
+        <h2>Título de ...</h2>
+        <p>Lorem Texto Texto Texto</p>
+        <div class="foot">
+            <hr />
+            <footer>
+                <p>
+                    Estudos em HTML5, CSS3 E JAVASCRIPT por
+                    <a href="https://marceloicampos.com/about" target="_blank"
+                        >Marcelo Ildefonso Campos</a
+                    >
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>
+-->
+
+## >>>>>> _Markdown Syntax_
 
 LINE
-***
 
-LINE
 ---
+
+## LINE
 
 ~~RISCADO~~
 
-__NEGRITO__
+**NEGRITO**
 
 **NEGRITO**
 
 _ITÁLICO_
 
-*ITÁLICO*
+_ITÁLICO_
 
-***NEGRITO E ITÁLICO***
+**_NEGRITO E ITÁLICO_**
 
-___NEGRITO E ITÁLICO___
+**_NEGRITO E ITÁLICO_**
 
-## >>>>>> *Títulos*
+## >>>>>> _Títulos_
 
 # Título 1
 
@@ -36,63 +75,69 @@ ___NEGRITO E ITÁLICO___
 
 #### Título 4
 
-## >>>>>> *Lista Numerada*
+## >>>>>> _Lista Numerada_
 
 1. Teste
 2. Teste
 3. Teste
-***
+
+---
+
 1. Teste1
 1. Teste2
 1. Teste3
-***
+
+---
+
 1. Teste
 1. Teste
 1. Teste
-   1. Teste (três espaços em branco criam um sub item)
-   1. Teste
+    1. Teste (três espaços em branco criam um sub item)
+    1. Teste
 
-## >>>>>> *Lista com marcadores*
+## >>>>>> _Lista com marcadores_
 
-* Teste
-* Teste
-* Teste
-   * Teste
-***
-- Teste
-- Teste
-- Teste
-   - Teste (três espaços em branco criam um sub item)
+-   Teste
+-   Teste
+-   Teste
+    -   Teste
 
-## >>>>>> *Lista de tarefas*
+---
 
-- [ ] Criar página
-- [ ] Formartar
-- [x] Revisar
+-   Teste
+-   Teste
+-   Teste
+    -   Teste (três espaços em branco criam um sub item)
 
-## >>>>>> *Link de imagem*
+## >>>>>> _Lista de tarefas_
+
+-   [ ] Criar página
+-   [ ] Formatar
+-   [x] Revisar
+
+## >>>>>> _Link de imagem_
 
 ![descrição da imagem](url da imagem)
 
-## >>>>>> *Link normal*
+## >>>>>> _Link normal_
 
-[descrição do link](url do link) 
+[descrição do link](url do link)
 
-## >>>>>> *Tabelas*
+## >>>>>> _Tabelas_
 
-Numéro | Nome | Notas
----|---|---
-1 | Marcelo | 9,50
-2 | Caio | 10,00
-3 | Duda | 9,00
+| Número | Nome    | Notas |
+| ------ | ------- | ----- |
+| 1      | Marcelo | 9,50  |
+| 2      | Caio    | 10,00 |
+| 3      | Eduarda | 9,00  |
 
 Terminou a tabela
 
-## >>>>>> *Comandos*
+## >>>>>> _Comandos_
 
-FICA ENTRE três crases ```command (input)```
+FICA ENTRE três crase `command (input)`
 
-## >>>>>> *Emoji*
+## >>>>>> _Emoji_
 
 Insira dois pontos emoji dois pontos :hand:
 
@@ -103,13 +148,13 @@ Insira dois pontos emoji dois pontos :hand:
 
 [site de EMOJI clique aqui](https://emojipedia.org) - for Title Issues
 
-## >>>>>> *Marcar Pessoas*
+## >>>>>> _Marcar Pessoas_
 
 usa o @
 
-## >>>>>> *Respostas para pessoas e postagens*
+## >>>>>> _Respostas para pessoas e posts_
 
-CLICA NAS ... NO CANTO DA POSTAGEM OU TAMBÉM UM BLOCKQUOTES
+CLICA NO CANTO DO POST OU TAMBÉM UM BLOCKQUOTE
 
 > (>) É SÍMBOLO DE REPLY
 

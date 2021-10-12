@@ -1,4 +1,18 @@
 {
     "cSpell.enabled": true,
-    "cSpell.language": "pt,en"
+    "cSpell.language": "pt,en",
+    "liveServer.settings.port": 5501,
+    "cSpell.words": [
+        "allowfullscreen",
+        "bgcolor",
+        "Castlevania",
+        "Gaiden",
+        "Guanacast",
+        "Hostnet",
+        "limoes",
+        "meulivro",
+        "registrada",
+        "SNES",
+        "webm"
+    ]
 }

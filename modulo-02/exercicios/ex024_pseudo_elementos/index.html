@@ -1,65 +1,151 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+    <head>
+        <meta name="description" content="Web tutorials" />
+        <meta name="keywords" content="HTML, CSS, JavaScript" />
+        <meta name="author" content="Marcelo Ildefonso Campos" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="../../../favicon.ico"
+            type="image/x-icon"
+        />
+        <!-- <link rel="stylesheet" href="../../css/style-modulo-02-pages.css" /> -->
+        <title>Pseudo Elementos</title>
+        <style>
+            body {
+                margin-bottom: 96px;
+                background-color: #222222;
+                font-family: Arial, Helvetica, sans-serif;
+            }
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="../../css/style-modulo-02.css"> -->
-    <title>Pseudo Elementos</title>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        a {
-            color: #ff0000;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        a:visited {
-            color: #8b0000;
-        }
-        a:hover {
-            color: #000000;
-            text-decoration: underline;
-        }
-        a:active {
-            color: #ffff00;
-        }
-        .especial::after {
-            content: ' [ Link ]';
-            text-decoration: none;
-            font-weight: normal;
-            color: #a9a9a9;
-        }
-        .especial::before {
-            content: '=> ';
-        }
-        a.especial {
-            color: #ffffff;
-            background-color: #8b0000;
-        }
-    </style>
-</head>
+            h1 {
+                color: #4751c5;
+            }
 
-<body>
-    <h1>Exercício 024 - Pseudo Elementos</h1>
-    <p><a href="../../index.html">Voltar para Módulo 02</a></p>
-    <hr>
+            h2 {
+                color: #00adc1;
+            }
 
-    <h2>Personalizando Links em HTML</h2>
-    <ul>
-        <li><a href="https://github.com/marceloicampos" target="_blank">Meu GitHub</a></li>
-        <li><a href="https://marceloicampos.com/about" target="_blank" class="especial">Meu Canal no YouTube</a></li>
-        <li><a href="https://www.youtube.com/user/MICChannel79/playlists" target="_blank">Meu Site</a></li>
-        <li>PSEUDO CLASSES leva <strong>:</strong></li>
-        <li>PSEUDO ELEMENTOS leva <strong>::</strong></li>
-        <li>CHILDREN leva <strong>&gt;</strong></li>
-    </ul>
-    <hr>
-    <footer>
-        <p>Estudos em HTML5 e CSS3 por <a href="https://marceloicampos.com/about" target="_blank">Marcelo Ildefonso Campos</a></p>
-    </footer>
-</body>
+            h3 {
+                color: #00adc1;
+            }
 
+            p {
+                color: #ffffff;
+                font-size: 1em;
+            }
+
+            a {
+                color: #ff0000;
+                font-weight: bolder;
+                text-decoration: none;
+            }
+            a:visited {
+                color: #8b0000;
+            }
+            a:hover {
+                color: gray;
+                text-decoration: underline;
+            }
+            a:active {
+                color: #ffff00;
+            }
+            .especial::after {
+                content: ' [ Link ]';
+                text-decoration: none;
+                font-weight: normal;
+                color: blue;
+            }
+            .especial::before {
+                content: '=> ';
+                text-decoration: none;
+                font-weight: normal;
+                color: yellow;
+            }
+            a.especial {
+                color: #ffffff;
+                background-color: #8b0000;
+            }
+            #foot {
+                text-align: center;
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                height: auto;
+                width: 100%;
+                background-color: #000000;
+                text-align: center;
+            }
+
+            #foot p {
+                color: #ffffff;
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 16px;
+                font-weight: normal;
+            }
+
+            #foot a {
+                color: #606060;
+                text-decoration: none;
+            }
+
+            #foot a:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Exercício 024 - Pseudo Elementos</h1>
+        <p><a href="./../../">Voltar para Módulo 02</a></p>
+        <hr />
+        <h2>Personalizando Links em HTML</h2>
+        <ul>
+            <li>
+                <a href="https://github.com/marceloicampos" target="_blank"
+                    >Meu GitHub</a
+                >
+            </li>
+            <br />
+            <li>
+                <a
+                    href="https://www.youtube.com/user/MICChannel79/playlists"
+                    target="_blank"
+                    >Meu Canal no YouTube</a
+                >
+            </li>
+            <br />
+            <li>
+                <a
+                    class="especial"
+                    href="https://marceloicampos.com/about"
+                    target="_blank"
+                    >Meu Site</a
+                >
+            </li>
+            <li>
+                <p>PSEUDO CLASSES leva <strong>:</strong></p>
+            </li>
+            <li>
+                <p>PSEUDO ELEMENTOS leva <strong>::</strong></p>
+            </li>
+            <li>
+                <p>CHILDREN leva <strong>&gt;</strong></p>
+            </li>
+        </ul>
+        <div id="foot">
+            <hr />
+            <footer>
+                <p>
+                    Estudos em HTML5, CSS3 E JAVASCRIPT por
+                    <a href="https://marceloicampos.com/about" target="_blank"
+                        >Marcelo Ildefonso Campos</a
+                    >
+                </p>
+            </footer>
+        </div>
+    </body>
 </html>

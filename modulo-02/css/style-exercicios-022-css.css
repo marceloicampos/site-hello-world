@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+/* 
+em HTML é id = em CSS é # (só pode um elemento por id)
+em HTML é class = CSS é . (pode vários elementos por class)
+*/
+
+body {
+    margin-bottom: 96px;
+    background-color: #9cfccb;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #1e402f;
+}
+
+h1#principal {
+    color: white;
+    text-align: center;
+    background-color: #3c805e;
+}
+
+h2 {
+    color: #3c805e;
+}
+
+.basic {
+    color: red;
+}
+
+.intermediate {
+    color: blue;
+}
+
+.advanced {
+    color: green;
+}
+
+.spotlight {
+    background-color: yellow;
+}
+
+a,
+a:visited {
+    color: #ffffff;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.foot {
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    background-color: #000000;
+    text-align: center;
+}
+
+.foot p {
+    color: #ffffff;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.foot a {
+    color: #606060;
+    text-decoration: none;
+}
+
+.foot a:hover {
+    text-decoration: underline;
+}
