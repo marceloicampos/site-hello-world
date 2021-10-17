@@ -13,92 +13,82 @@
             type="image/x-icon"
         />
         <link rel="stylesheet" href="../../css/style-modulo-01-pages.css" />
-        <title>Formatação de Textos</title>
+        <title>Semânticas em HTML5</title>
     </head>
     <body>
-        <h1>Principais formatações em HTML</h1>
+        <h1>Principais Semânticas em HTML5</h1>
         <p><a href="./../../">Voltar para Módulo 01</a></p>
         <p><a href="./ex007_html4.html">Site em html4 em DESUSO</a></p>
         <p><a href="./ex007_html5.html">Site em HTML5 com Semântica</a></p>
         <hr />
-
+        <p>
+            Em HTML5 o significado de algumas TAGs tem mais relevância que a
+            forma, ou seja, a Tag b que representa somente a forma em negrito
+            está em desuso (e NÃO devemos mais usar), então atualmente com o
+            HTML5 usamos tags com significado (ou valor semântico) usando a Tag
+            strong que além de inserir a forma de negrito impõe um valor ao
+            texto de "algo forte" para o conteúdo.
+        </p>
         <h2>Negrito / Destaque</h2>
-
         <p>
             Nesta frase temos um <b>termo em negrito</b> usando a tag B (não
             semântica então não faz sentido usar a tag B).
         </p>
-
         <p>
             Nesta frase, tenho um <strong>termo em destaque</strong> usando a
-            tag STRONG (semântica).
+            tag STRONG (com semântica).
         </p>
-
         <h2>Itálico / Ênfase</h2>
-
         <p>
-            Nesta frase, temos um <i>termo em itálico</i> usando a tag I (não
-            semântica então não faz sentido usar tag I).
+            Nesta frase, temos um <i>termo em itálico</i> usando a tag i (não
+            semântica então não faz sentido usar tag i).
         </p>
-
         <p>
-            Nesta frase, temos um <em>termo em ênfase</em> usando a tag EM
-            (semântica).
+            Nesta frase, temos um <em>termo em ênfase</em> usando a tag em (com
+            semântica).
         </p>
-
         <h2>Texto marcado</h2>
-
         <p>
             Podemos criar também um <mark>texto marcado</mark> usando a tag
-            MARK.
+            mark.
         </p>
-
         <p>
             E neste outro parágrafo, temos outro
-            <mark style="background-color: lime; color: brown"
+            <mark
+                style="background-color: lime; color: blue; font-weight: bolder"
                 >texto marcado</mark
             >
             com parâmetro style em css dentro da própria tag mark para mudar a
-            cor do mark e do texto que está marcado.
+            cor do mark, do texto que está marcado e peso da fonte para super
+            negrito.
         </p>
-
         <h2>Texto grande e pequeno</h2>
-
         <p>
             Estamos criando um <big>texto grande</big> e um
-            <small>texto pequeno</small> nesse parágrafo. NOTA: tag BIG é
-            obsoleta, porém a tag SMALL ainda é atual, pois a exemplo podemos
+            <small>texto pequeno</small> nesse parágrafo. NOTA: tag big é
+            obsoleta, porém a tag small ainda é atual, pois a exemplo podemos
             usar letra pequena com semântica para indicar uma nota de rodapé.
         </p>
-
         <h2>Texto apagado</h2>
-
         <p>
             Podemos marcar um <del>texto como excluído</del> para indicar que
-            ele deve ser lido, mas não considerado, usando a tag DEL
+            ele deve ser lido, mas não considerado, usando a tag del
             (semântica).
         </p>
-
         <h2>Texto inserido</h2>
-
         <p>
             Podemos marcar um <ins>texto como inserido</ins> para dar uma ênfase
-            e indicar que ele foi adicionado depois, usando a tag INS
+            e indicar que ele foi adicionado depois, usando a tag ins
             (semântica).
         </p>
-
         <p>
-            Existe também o <u>sublinhado</u> com a tag U (não semântica então
-            não faz sentido usar a tag U).
+            Existe também o <u>sublinhado</u> com a tag u (não semântica então
+            não faz sentido usar a tag u).
         </p>
-
         <h2>Texto sobrescrito</h2>
-
-        <p>Para inserir coisas do tipo x<sup>20</sup>+3 usamos a tag SUP.</p>
-
+        <p>Para inserir coisas do tipo x<sup>20</sup>+3 usamos a tag sup.</p>
         <h2>Texto subscrito</h2>
-
-        <p>Para inserir coisas do tipo H<sub>2</sub>O usamos a tag SUB</p>
+        <p>Para inserir coisas do tipo H<sub>2</sub>O usamos a tag sub</p>
         <div class="foot">
             <hr />
             <footer>
