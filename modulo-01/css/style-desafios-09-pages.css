@@ -23,6 +23,17 @@ p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a,
+a:visited {
+    color: whitesmoke;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 div {
     text-align: center;
 }

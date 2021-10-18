@@ -21,9 +21,9 @@
         <hr />
         <h2>Listas Ordenadas - OL</h2>
         <ol type="1" start="3">
-            <li>a TAG <strong>&lt;ol&gt;</strong> cria Lista Ordenadas.</li>
+            <li>a tag <strong>&lt;ol&gt;</strong> cria Lista Ordenadas.</li>
             <li>
-                o PARÂMETRO <strong>type</strong> mostra a lista por tipos que
+                o atributo <strong>type</strong> mostra a lista por tipos que
                 podem ser:
             </li>
             <li>
@@ -32,7 +32,7 @@
                 romanos minúsculos).
             </li>
             <li>
-                o PARÂMETRO <strong>start</strong> indica onde a ordem da lista
+                o atributo <strong>start</strong> indica onde a ordem da lista
                 deve começar, nesse caso indiquei o início em 3.
             </li>
             <li>
@@ -41,10 +41,11 @@
             </li>
             <li>
                 NOTA: a partir do html5 o fechamento dos items de listas (pela
-                TAG &lt;li&gt;) são opcionais.
+                tag &lt;li&gt;) são opcionais, mas é recomendado o fechamento
+                com &lt;/li&gt;.
             </li>
             <li>
-                NOTA: na boa prática devemos indicar o PARÂMETRO type na CSS
+                NOTA: na boa prática devemos indicar o atributo type na CSS
                 usando a propriedade list-style-type, pois as formatações são
                 representadas dentro da CSS. Esta regra vale tanto para as OL
                 como para UL.
@@ -55,15 +56,18 @@
         </ol>
         <h2>Listas não Ordenadas - UL</h2>
         <ul type="disc">
-            <li>a TAG <strong>&lt;ul&gt;</strong> cria Lista Não Ordenadas.</li>
+            <li>a tag <strong>&lt;ul&gt;</strong> cria Lista Não Ordenadas.</li>
             <li>
-                o PARÂMETRO <strong>type</strong> mostra lista por tipos que
+                o atributo <strong>type</strong> mostra lista por tipos que
                 podem ser:
             </li>
-            <li>disc (PADRÃO); circle ; square, no caso usei o disc.</li>
+            <li>disc (PADRÃO), circle, square, no caso usei o disc.</li>
             <li>
-                NOTA: geralmente os menus dos sites são criados por listas não
-                ordenadas. MUITO IMPORTANTE SABER ESSE TIPO DE CONSTRUÇÃO.
+                NOTA: geralmente
+                <strong>
+                    os menus dos sites são criados por listas não ordenadas </strong
+                >. MUITO IMPORTANTE SABER ESSE TIPO DE CONSTRUÇÃO PARA MENUS DE
+                SITES.
             </li>
             <li>Manteiga</li>
             <li>Arroz</li>
@@ -109,12 +113,13 @@
             </ul>
         </ol>
         <h2>
-            Lista de Definições usando a TAG &lt;dl&gt; - NOTA: funciona com um
-            dicionário com um termo &lt;dt&gt; e a definição do termo &lt;dd&gt;
+            Lista de Definições usando a tag &lt;dl&gt; - NOTA: funciona como um
+            dicionário, com um termo &lt;dt&gt; e uma definição do termo
+            &lt;dd&gt;
         </h2>
         <dl>
             <dt>Termo</dt>
-            <dd>Descrição</dd>
+            <dd>Definição do Termo</dd>
             <dt>HTML</dt>
             <dd>
                 Linguagem de marcação para a criação do conteúdo de um site.

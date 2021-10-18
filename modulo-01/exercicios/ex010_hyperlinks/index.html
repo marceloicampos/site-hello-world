@@ -30,27 +30,27 @@
             </strong>
             para acessar fragmento da parte de baixo da página (Nota: para usar
             link de fragmento usamos uma # dentro do link do href para
-            direcionar o site para parte específica por meio de uma id da parte
-            do site a ser deslocada, ficou curioso olha o código).
+            direcionar o site para uma parte específica por meio de uma id da
+            parte do site a ser deslocada, ficou curioso olha o código).
         </p>
         <h2>Usando links externos</h2>
         <p>
-            Usamos a TAG <strong>&lt;a&gt;</strong> para criar Hyperlinks ou
+            Usamos a tag <strong>&lt;a&gt;</strong> para criar Hyperlinks ou
             Âncoras.
         </p>
         <ul>
             <li>
-                O PARÂMETRO
+                O atributo
                 <strong>href="https://www.xxx.com.br"</strong> define a URL que
-                a TAG &lt;a&gt; aponta.
+                a tag &lt;a&gt; aponta.
             </li>
             <li>
-                O PARÂMETRO <strong>target="_blank"</strong> define o alvo do
+                O atributo <strong>target="_blank"</strong> define o alvo do
                 Hyperlink com os valores _blank para abrir em nova aba/página ou
                 _self para abrir na mesma aba/página.
             </li>
             <li>
-                O PARÂMETRO <strong>rel="external"</strong> define o tipo de
+                O atributo <strong>rel="external"</strong> define o tipo de
                 Hyperlink como o valor external para relativizar o Hyperlink
                 como externo, <strong>next</strong> indica que o link é para a
                 próxima parte do documento atual, <strong>prev</strong> indica
@@ -59,7 +59,7 @@
                 autor do artigo atual.
             </li>
             <li>
-                O PARÂMETRO <strong>hreflang="en"</strong> indica o tipo de
+                O atributo <strong>hreflang="en"</strong> indica o tipo de
                 idioma do Hyperlink com os valores, por exemplo, en para lingua
                 inglesa.
             </li>
@@ -77,7 +77,8 @@
                 rel="external"
                 >repositório público no GitHub</a
             >
-            usamos o target _self que irá abrir na mesma aba/página.
+            usamos o target _self que irá abrir na mesma aba/página e indicando
+            rel como external para indicar que é um link externo.
         </p>
         <p>
             Você também pode acessar o
@@ -87,7 +88,8 @@
                 rel="external"
                 >meu canal no YouTube</a
             >
-            usamos o target _blank que irá abrir em outra aba/página.
+            usamos o target _blank que irá abrir em outra aba/página e indicando
+            rel como external para indicar que é um link externo.
         </p>
         <h2>Usando links internos</h2>
         <p>
@@ -95,13 +97,13 @@
         </p>
         <p>
             Se você quiser, pode acessar também a minha
-            <a href="./ex010_page_002.html"
+            <a href="./ex010_page_002.html" rel="next"
                 >SEGUNDA página de exemplo INTERNA</a
             >
         </p>
         <p>
             Você também pode acessar a nossa
-            <a href="./ex010_page_003.html"
+            <a href="./ex010_page_003.html" rel="next"
                 >TERCEIRA página de notícia INTERNA</a
             >
         </p>
@@ -109,6 +111,7 @@
             Você também pode acessar a nossa
             <a
                 href="../ex010_hyperlinks/ex010_arquivos/new_page/ex010_page_004.html"
+                rel="next"
                 >QUARTA página de exemplos INTERNA</a
             >
             - Esta página, em termos de estrutura do HTML, está dentro de
