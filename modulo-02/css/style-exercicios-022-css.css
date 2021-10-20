@@ -16,7 +16,7 @@ h1 {
 }
 
 h1#principal {
-    color: white;
+    color: #fff;
     text-align: center;
     background-color: #3c805e;
 }
@@ -43,7 +43,7 @@ h2 {
 
 a,
 a:visited {
-    color: #ffffff;
+    color: #fff;
     font-weight: bolder;
     text-decoration: none;
 }
@@ -64,7 +64,7 @@ a:hover {
 }
 
 .foot p {
-    color: #ffffff;
+    color: #fff;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;

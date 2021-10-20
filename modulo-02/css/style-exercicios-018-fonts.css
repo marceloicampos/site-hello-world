@@ -10,20 +10,20 @@ body {
 }
 
 h1 {
-    color: #4751c5;
+    color: #00adc1;
 }
 
 h2 {
-    color: #00adc1;
+    color: #6f7bf5;
 }
 
 h3 {
-    color: #00adc1;
+    color: #6f7bf5;
     font-family: 'Work Sans', sans-serif;
 }
 
 p {
-    color: #ffffff;
+    color: #fff;
     font-family: 'Work Sans', sans-serif;
     font-weight: 100;
     font-size: 1.5em;
@@ -31,7 +31,7 @@ p {
 
 a,
 a:visited {
-    color: #ffffff;
+    color: #fff;
     font-weight: bolder;
     text-decoration: none;
 }
@@ -52,7 +52,7 @@ a:hover {
 }
 
 .foot p {
-    color: #ffffff;
+    color: #fff;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;

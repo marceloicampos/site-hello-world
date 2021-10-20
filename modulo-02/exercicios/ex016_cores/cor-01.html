@@ -14,69 +14,79 @@
         />
         <link rel="stylesheet" href="../../css/style-modulo-02-pages.css" />
         <title>Cores em CSS</title>
-        <style>
-            body {
-                /* background-color: #ffbb3b; */
-                background-color: #ebba00;
-            }
-
-            p {
-                color: #000000;
-            }
-        </style>
     </head>
     <body>
         <h1>Cores com CSS3</h1>
         <p><a href="../ex016_cores/">Voltar para Exercício 16</a></p>
         <hr />
-        <p>Veja o código fonte para entender como inserimos cores com CSS3</p>
-        <h2 style="background-color: blue; color: white">
-            Exemplo de Cores por nomes de cores
-        </h2>
-        <p>Representação da cor por nomes de cores, red, blue, white</p>
-        <h2 style="background-color: #0000ff; color: #ffffff">
-            Exemplo de Cores por códigos hexadecimais
-        </h2>
-        <p>Representação da cor por códigos hexadecimais</p>
-        <p>Sistema Decimal 0 1 2 3 4 5 6 7 8 9</p>
-        <p>
-            Sistema Hexadecimal 0 1 2 3 4 5 6 7 8 9 A B C D E F &gt; &gt; &gt;
-            São 16 algarismos onde as letras A B C D E F são algarismos em base
-            Hexadecimal assim a cor #0000ff não há nada de vermelho R &gt; &gt;
-            &gt; 00, não há nada de verde G &gt; &gt; &gt; 00 e temos o máximo
-            de azul B &gt; &gt; &gt; ff ENTÃO o RGB da cor azul é #0000ff em
-            hexadecimal
-        </p>
-        <h2 style="background-color: rgb(0, 0, 255); color: rgb(255, 255, 255)">
-            Exemplo de Cores por RGB
-        </h2>
-        <p>Representação da cor por rgb(0, 0, 255) para azul</p>
-        <h2
-            style="
-                background-color: hsl(240, 100%, 50%);
-                color: hsl(0, 0%, 100%);
-            "
-        >
-            Exemplo de Cores por suas características ou por HSL
-        </h2>
-        <p>
-            Representação da cor por suas características em H de Matiz, S de
-            Saturação em % e L de Luminosidade em % ou simplesmente hsl(240,
-            100%, 50%) para azul
-        </p>
-        <h2
-            style="
-                background-color: rgba(0, 0, 255, 0.6);
-                color: rgba(255, 255, 255, 0.3);
-            "
-        >
-            Exemplo de Cores RGB e HSL com transparência
-        </h2>
-        <p>
-            Representação da cor RGB e HSL com transparência acrescentando o
-            canal alfa da cor rgba e hsla, em hexadecimal ocorre o acréscimo de
-            mais 2 algarismos para representar o canal alfa de transparência.
-        </p>
+        <div class="container">
+            <p>
+                Veja o código fonte para entender como inserimos cores com CSS3
+            </p>
+            <h2 style="background-color: blue; color: white">
+                Aqui temos exemplo de Cores por nomes de Cores
+            </h2>
+            <p>
+                Representação da cor por nomes de cores como: red, green, blue
+            </p>
+            <h2 style="background-color: #0000ff; color: #ffffff">
+                Aqui temos exemplo de Cores por Códigos Hexadecimais
+            </h2>
+            <p>Representação da cor por códigos hexadecimais</p>
+            <p>Sistema Decimal 0 1 2 3 4 5 6 7 8 9</p>
+            <p>
+                Sistema Hexadecimal 0 1 2 3 4 5 6 7 8 9 A B C D E F &gt; São 16
+                algarismos onde as letras A B C D E F são algarismos em base
+                Hexadecimal assim na cor #0000ff <br />
+                não há nada de vermelho R &gt; 00, <br />
+                não há nada de verde G &gt; 00 <br />
+                e temos o máximo de azul B &gt; ff <br />
+                ENTÃO o RGB da cor azul é #0000ff em hexadecimal
+            </p>
+            <h2
+                style="
+                    background-color: rgb(0, 0, 255);
+                    color: rgb(255, 255, 255);
+                "
+            >
+                Aqui temos exemplo de Cores por
+                <span style="background-color: #ffffff; width: 80px">
+                    <span style="color: red; font-weight: bolder">R </span
+                    ><span style="color: green; font-weight: bolder">G </span
+                    ><span style="color: blue; font-weight: bolder">B</span>
+                </span>
+            </h2>
+            <p>Representação da cor por rgb(0, 0, 255) para azul</p>
+            <h2
+                style="
+                    background-color: hsl(240, 100%, 50%);
+                    color: hsl(0, 0%, 100%);
+                "
+            >
+                Aqui temos exemplo de Cores por suas Características ou por HSL
+            </h2>
+            <p>
+                Representação da cor por suas características em <br />
+                H de Matiz, <br />
+                S de Saturação em % e <br />
+                L de Luminosidade em % ou <br />
+                simplesmente hsl(240, 100%, 50%) para azul
+            </p>
+            <h2
+                style="
+                    background-color: rgba(0, 0, 255, 0.6);
+                    color: hsla(0, 0%, 100%, 0.3);
+                "
+            >
+                Aqui temos exemplo de Cores RGB e HSL com transparência
+            </h2>
+            <p>
+                Representação da cor RGB e HSL com transparência é realizada
+                acrescentando-se o canal alfa ao final código da cor rgba ou
+                hsla, em hexadecimal (por exemplo) ocorre o acréscimo de mais 2
+                algarismos para representar o canal alfa de transparência.
+            </p>
+        </div>
         <div class="foot">
             <hr />
             <footer>

@@ -12,13 +12,13 @@ body {
 
 main {
     background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px rgb(136, 109, 93, 0.616);
-    /* sombra para o lado, sombra para baixo e transparência da sombra, depois a cor da sombra com monocromia e transparência em rgba*/
-    max-width: 1200px;
+    max-width: 900px;
+    margin: 32px auto;
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: 8px 8px 16px 8px rgb(136, 0, 0, 0.616);
+    /* sombra para o lado esquerdo, sombra para baixo, transparência da sombra e sombra para os lados e depois a cor da sombra com monocromia e transparência em rgba*/
     width: auto;
-    padding: 10px;
-    margin: auto;
 }
 
 h1 {
@@ -42,7 +42,7 @@ p {
 
 a,
 a:visited {
-    color: #ffffff;
+    color: #fff;
     font-weight: bolder;
     text-decoration: none;
 }
@@ -63,7 +63,7 @@ a:hover {
 }
 
 .foot p {
-    color: #ffffff;
+    color: #fff;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
