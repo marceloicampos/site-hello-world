@@ -6,7 +6,8 @@
 
 body {
     margin-bottom: 96px;
-    background-image: linear-gradient(to bottom, #f1d8c9, #f2c3a7 20%);
+    /* background-image: linear-gradient(to bottom, #f1d8c9, #f2c3a7 20%); */
+    background-image: linear-gradient(to bottom, #e9edf2, #2484bf 20%);
     background-attachment: fixed;
 }
 
@@ -16,24 +17,24 @@ main {
     margin: 32px auto;
     padding: 16px;
     border-radius: 16px;
-    box-shadow: 8px 8px 16px 8px rgb(136, 0, 0, 0.616);
+    box-shadow: 8px 8px 16px 8px rgba(24, 63, 140, 0.6);
     /* sombra para o lado esquerdo, sombra para baixo, transparência da sombra e sombra para os lados e depois a cor da sombra com monocromia e transparência em rgba*/
     width: auto;
 }
 
 h1 {
-    color: #125189;
+    color: #183f8c;
 }
 
 h2 {
-    color: #f39209;
+    color: #2659bf;
     text-align: center;
-    text-shadow: 2px 2px 1px rgba(129, 77, 5, 0.726);
+    text-shadow: 2px 2px 1px rgba(36, 132, 191, 0.7);
     /* sombra para o lado, sombra para baixo e transparência da sombra, depois a cor da sombra com monocromia e transparência e, rgba*/
 }
 
 h3 {
-    color: #125189;
+    color: #183f8c;
 }
 
 p {
