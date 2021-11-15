@@ -47,6 +47,10 @@ p {
     margin-left: 0px;
 }
 
+#logo {
+    display: flex;
+}
+
 span#code {
     font-size: 16px;
     color: darkslateblue;
