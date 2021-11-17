@@ -17,7 +17,7 @@
         <style>
             body {
                 margin-bottom: 96px;
-                background-color: #222222;
+                background-color: rgba(34, 34, 34, 0.7);
                 font-family: Arial, Helvetica, sans-serif;
             }
 
@@ -29,46 +29,48 @@
                 color: #6f7bf5;
             }
 
-            h3 {
-                color: #6f7bf5;
-            }
-
             p {
                 color: #fff;
                 font-size: 1em;
             }
 
             a {
-                color: #ff0000;
-                font-weight: bolder;
+                color: rgb(30, 255, 0);
+                font-weight: boldER;
                 text-decoration: none;
             }
             a:visited {
-                color: #8b0000;
+                color: darkred;
             }
+
             a:hover {
-                color: gray;
+                color: black;
                 text-decoration: underline;
             }
+
             a:active {
                 color: #ffff00;
             }
+
             .especial::after {
                 content: ' [ Link ]';
                 text-decoration: none;
                 font-weight: normal;
-                color: blue;
+                color: rgb(30, 255, 0);
             }
+
             .especial::before {
                 content: '=> ';
                 text-decoration: none;
                 font-weight: normal;
                 color: yellow;
             }
+
             a.especial {
                 color: #fff;
                 background-color: #8b0000;
             }
+
             #foot {
                 text-align: center;
                 position: fixed;
@@ -127,15 +129,36 @@
                 >
             </li>
             <li>
-                <p>PSEUDO CLASSES leva <strong>:</strong></p>
+                <p>
+                    CHILDREN leva
+                    <strong style="color: black">&gt;</strong> como exemplo: div
+                    &gt; p, onde só vamos formatar o p da div.
+                </p>
             </li>
             <li>
-                <p>PSEUDO ELEMENTOS leva <strong>::</strong></p>
+                <p>
+                    PSEUDO CLASSES leva
+                    <strong style="color: black">:</strong> exemplo: a:hover,
+                    onde ao passar o mouse mudamos o estado do elemento.
+                </p>
             </li>
             <li>
-                <p>CHILDREN leva <strong>&gt;</strong></p>
+                <p>
+                    PSEUDO ELEMENTOS leva
+                    <strong style="color: black">::</strong> exemplo a::before,
+                    onde podemos incluir conteúdo ao elemento antes do elemento.
+                </p>
             </li>
         </ul>
+        <br />
+        <p>- VERDE É O LINK NÃO VISITADO 'a'</p>
+        <p>- VERMELHO É O LINK VISITADO 'a:visited'</p>
+        <p>- PRETO É O LINK APONTADO COM O MOUSE 'a:hover'</p>
+        <p>- AMARELO É O LINK ATIVADO PELO MOUSE 'a:active'</p>
+        <p>- O LINK MEU SITE ESTÁ TRATADO COM PSEUDO ELEMENTO</p>
+        <p>
+            - O PSEUDO ELEMENTO TRABALHA COM O CONTEÚDO PERIFÉRICO DOS ELEMENTOS
+        </p>
         <div id="foot">
             <hr />
             <footer>
