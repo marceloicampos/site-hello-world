@@ -29,12 +29,9 @@
                 color: #6f7bf5;
             }
 
-            h3 {
-                color: #6f7bf5;
-            }
-
             ul {
                 color: white;
+                font-size: 1.5em;
             }
 
             p {
@@ -43,26 +40,45 @@
             }
 
             div {
-                display: inline-block;
-                background-color: lightgray;
-                border: 1px solid black;
-                text-align: justify;
-                height: 100px;
-                width: 480px;
-                padding: 3px;
-                margin-top: 3px;
+                display: inline-block; /*ok*/
+                border: 2px solid black; /*ok*/
+                text-align: left; /*ok*/
+                height: 200px; /*ok*/
+                width: 200px;
+                padding: 5px;
+                margin: 5px;
             }
 
-            div:hover {
+            div#d1 {
+                background-color: red;
+            }
+
+            div#d2 {
+                background-color: green;
+            }
+
+            div#d3 {
+                background-color: blue;
+            }
+
+            div#d1:hover {
                 background-color: yellow;
             }
 
-            div > p {
-                display: none;
+            div#d2:hover {
+                background-color: yellow;
             }
 
-            div:hover > p {
-                display: block;
+            div#d3:hover {
+                background-color: yellow;
+            }
+
+            div > span {
+                visibility: hidden;
+            }
+
+            div:hover > span {
+                visibility: visible;
                 color: white;
                 background-color: green;
             }
@@ -113,33 +129,43 @@
         <hr />
         <h2>Trabalhando com Pseudo Classes</h2>
         <ul>
-            <li># é id</li>
-            <li>. é class</li>
+            <li># é para id</li>
+            <li>. é para class</li>
             <li>
-                : é pseudo classe, onde essas devem estar relacionadas ao estado
-                de um elemento ou de uma class, no exemplo seguir usamos o hover
-                e ao passar o mouse por cima a cor muda para amarelo.
+                : para é pseudo classe, onde essas devem estar relacionadas ao
+                estado de um elemento ou de uma class, no exemplo seguir usamos
+                o HOVER e ao passar o mouse por cima a cor muda para amarelo,
+                assim podemos alterar o estado de um elemento ou classe.
             </li>
         </ul>
-        <div id="d1">
-            A tag div é um elemento de divisão que gera um container para
-            conteúdo de fluxo, que de certa forma não representa nada, mas serve
-            para efetuar divisões no HTML.
-            <p>
-                Texto escondido por pseudo classe usando o hover mudamos a css
-                para esse texto escondido.
-            </p>
-        </div>
-        <div id="d2">
-            Ela pode ser utilizado para agrupar elementos para fins de estilos
-            usando class ou id, ou porque eles compartilham valores de
-            atributos, como lang.
-        </div>
-        <div id="d3">
-            Ela deve ser utilizada somente quando não tiver outros elementos de
-            semântica tal como article ou nav, pois as divisões main, article,
-            aside e ou nav dividem semanticamente a página.
-        </div>
+        <div id="d1">A</div>
+        <div id="d2">B</div>
+        <div id="d3">C <span>Texto escondido</span></div>
+        <ul>
+            <li>
+                A tag div é um elemento de divisão que gera um container para
+                conteúdo de fluxo, que de certa forma não representa nada, mas
+                serve para efetuar divisões no HTML.
+            </li>
+            <li>
+                A div pode ser utilizado para agrupar elementos para fins de
+                estilos usando class ou id, ou porque eles compartilham valores
+                de atributos como lang para com linguas diferentes.
+            </li>
+            <li>
+                A div deve ser utilizada somente quando não tiver outros
+                elementos de semântica tal como article ou nav, pois as divisões
+                main, article, aside e ou nav dividem semanticamente a página.
+            </li>
+            <pre>
+                /* para exibir o texto escondido */
+                div:hover &gt; span {
+                    visibility: visible;
+                    color: white;
+                    background-color: green;
+                }
+            </pre>
+        </ul>
         <div id="foot">
             <hr />
             <footer>

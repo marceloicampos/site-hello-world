@@ -16,6 +16,18 @@ body {
     box-shadow: 4px 4px 8px 4px white;
 }
 
+h1#principal {
+    color: blueviolet;
+    text-align: center;
+    background-color: white;
+}
+
+.segundo p {
+    color: #DB5000;
+    background-color: white;
+    font-weight: bold;
+}
+
 h1 {
     color: #00adc1;
 }
