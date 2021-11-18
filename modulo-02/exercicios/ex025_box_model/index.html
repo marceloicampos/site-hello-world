@@ -32,6 +32,8 @@
             .aLevel {
                 border-width: 10px;
                 border-style: groove;
+                outline: 2px;
+                outline-style: dotted;
                 border-color: lightcoral;
             }
         </style>
@@ -51,9 +53,30 @@
             &lt;/h1&gt;
         </h1>
         <p>
-            Parágrafos - a tag &lt;p&gt; é exemplo de BOX LEVEL, mas os
+            Parágrafos - tag &lt;p&gt; - são exemplos de BOX LEVEL, mas os
             <a class="aLevel" href="">Links - tag &lt;a&gt;</a> são exemplos de
             caixas em linha ou BOX IN LINE.
+        </p>
+        <p>
+            BOX LEVEL: sempre pula uma linha e sempre ocupa 100% do viewport.
+            EXEMPLOS: div, h1-h6, p, main, header, nav, article, aside, footer,
+            form, video e outros.
+        </p>
+        <p>
+            IN LINE LEVEL: não pula a linha e só ocupa o viewport do
+            objeto.EXEMPLOS: span, a, code, strong, em, sup, sub, label, button,
+            input e outros
+        </p>
+        <img
+            src="./images/box-model-img.png"
+            alt="imagem modelo de caixas ou box model image"
+        />
+        <p>
+            No Box Model ou Modelo de Caixas temos os seguintes itens: conteúdo
+            com WIDTH e HEIGHT ou largura e altura, depois o PADDING distância
+            entre conteúdo e a borda, após temos a borda ou BORDER, logo após
+            temos o OUTLINE ou linha de fora da borda ou contorno da borda e por
+            último temos a margem ou MARGIN.
         </p>
         <div class="foot">
             <hr />
