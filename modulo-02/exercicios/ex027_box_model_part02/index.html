@@ -14,15 +14,43 @@
         />
         <link rel="stylesheet" href="../../css/style-modulo-02-pages.css" />
         <title>Box Model na Prática - Parte 02</title>
+        <style>
+            h2 {
+                background-color: lightgray;
+                width: 300px;
+                height: 300px;
+                border-width: 10px;
+                border-style: solid;
+                border-color: darkslategrey;
+                padding-top: 100px;
+                padding-right: 10px;
+                padding-bottom: 10px;
+                padding-left: 100px;
+            }
+            a {
+                border-width: 4px;
+                border-style: solid;
+                border-color: lightgray;
+            }
+        </style>
     </head>
     <body>
         <h1>Exercício 027 - Box Model na Prática - Parte 02</h1>
         <p><a href="./../../">Voltar para Módulo 02</a></p>
         <hr />
-        <!-- INÍCIO -->
-        <h2>Título de ...</h2>
-        <p>Lorem Texto Texto Texto</p>
-        <!-- FIM -->
+        <h2>Exemplo de Caixa box-level</h2>
+        <p style="background-color: red">
+            Assim com o h1 acima os parágrafos também são exemplos de box-level,
+            mas os
+            <a href="">LINKS são exemplos de caixas inline-level</a>.
+        </p>
+        <a style="background-color: red" href="#">LINK</a>
+        <p>
+            NOTA: por padrão os navegadores aplicam certos estilos a
+            determinadas tags, por exemplo a tag h1 tem display: block,
+            font-size: 2em, font-weight: bold e outras, a tag p tem display
+            block e outras.
+        </p>
         <div class="foot">
             <hr />
             <footer>
