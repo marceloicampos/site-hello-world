@@ -12,17 +12,173 @@
             href="../../../favicon.ico"
             type="image/x-icon"
         />
-        <link rel="stylesheet" href="../../css/style-modulo-02-pages.css" />
+        <!-- <link rel="stylesheet" href="../../css/style-modulo-02-pages.css" /> -->
         <title>Grouping Tags</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: dimgray;
+                margin: 0px;
+            }
+            header {
+                width: auto;
+                background-color: white;
+                padding: 5px;
+                margin: 5px;
+            }
+            nav {
+                background-color: rgb(102, 102, 102);
+                padding: 6px;
+                margin: 3px;
+                height: 18px;
+            }
+            nav > a {
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+                margin-right: 10px;
+                border-style: groove;
+                border-radius: 10px;
+                border-color: black;
+                padding: 3px;
+            }
+            nav > a:hover {
+                text-decoration: underline;
+            }
+            main {
+                background-color: white;
+                padding: 5px;
+                margin: 5px;
+            }
+            article {
+                background-color: lightgray;
+                padding: 3px;
+            }
+            article > aside {
+                background-color: rgb(165, 165, 165);
+            }
+            h2 {
+                padding: 1px;
+                margin: 1px;
+            }
+            p {
+                padding: 1px;
+                margin: 1px;
+            }
+            a {
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            footer {
+                background-color: black;
+                color: white;
+                text-align: center;
+                padding: 1px;
+                margin: 0px;
+            }
+        </style>
     </head>
     <body>
         <h1>Exercício 028 - Grouping Tags</h1>
         <p><a href="./../../">Voltar para Módulo 02</a></p>
         <hr />
-        <!-- INÍCIO -->
-        <h2>Título de ...</h2>
-        <p>Lorem Texto Texto Texto</p>
-        <!-- FIM -->
+        <h2>Grupo de Tags Semânticas em HTML5</h2>
+        <header>
+            <h2>Meu Site</h2>
+            <nav>
+                <a href="">home</a>
+                <a href="">sobre</a>
+                <a href="">fotos</a>
+                <a href="">videos</a>
+                <a href="">contato</a>
+            </nav>
+        </header>
+        <main>
+            <section id="assuntos">
+                <article>
+                    <h2>Grupo de Tags Semânticas em HTML5</h2>
+                    <p>
+                        As Semantic Grouping Tags deixam o web site organizado
+                        de forma semântica, ou seja, separamos dentro do HTML o
+                        cabeçalho (header) da parte principal (main), deixamos a
+                        parte principal (main) separada em parte como sessões
+                        (section), artigos (article), laterais (aside) e por fim
+                        o rodapé (footer). Esta separação conta muito para o SEO
+                        e o ranking dos crawlers (como o buscador do Google)
+                    </p>
+                </article>
+            </section>
+            <section id="noticias">
+                <article>
+                    <h2>Notícias sobre o Brasil</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Cumque labore voluptates quia doloremque quae sunt?
+                        facere dolore, eius modi debitis quo quasi dicta minima
+                        enim.
+                    </p>
+                    <aside>
+                        <p>Artigo escrito por josé da silva</p>
+                    </aside>
+                </article>
+                <article>
+                    <h2>Notícias sobre o Mundo</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Cumque labore voluptates quia doloremque quae sunt?
+                        facere dolore, eius modi debitis quo quasi dicta minima
+                        enim.
+                    </p>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p>Desenvolvido por Marcelo Ildefonso Campos</p>
+        </footer>
+        <code>
+            <pre>
+        &lt;h2&gt;Grupo de Tags Semânticas em HTML5&lt;/h2&gt;
+        &lt;header&gt;
+            &lt;h2&gt;Meu Site&lt;/h2&gt;
+            &lt;nav&gt;
+                &lt;a href=""&gt;home&lt;/a&gt;
+                &lt;a href=""&gt;sobre&lt;/a&gt;
+                &lt;a href=""&gt;fotos&lt;/a&gt;
+                &lt;a href=""&gt;videos&lt;/a&gt;
+                &lt;a href=""&gt;contato&lt;/a&gt;
+            &lt;/nav&gt;
+        &lt;/header&gt;
+        &lt;main&gt;
+            &lt;section&gt;
+                &lt;article&gt;
+                    &lt;h2&gt;Grupo de Tags Semânticas em HTML5&lt;/h2&gt;
+                    &lt;p&gt;As Semantic Grouping Tags&lt;/p&gt;
+                &lt;/article&gt;
+            &lt;/section&gt;
+            &lt;section&gt;
+                &lt;article&gt;
+                    &lt;h2&gt;Notícias sobre o Brasil&lt;/h2&gt;
+                    &lt;p&gt;Lorem ipsum dolor sit amet consectetur&lt;/p&gt;
+                    &lt;aside&gt;
+                        &lt;p&gt;Artigo escrito por josé da silva&lt;/p&gt;
+                    &lt;/aside&gt;
+                &lt;/article&gt;
+                &lt;article&gt;
+                    &lt;h2&gt;Notícias sobre o Mundo&lt;/h2&gt;
+                    &lt;p&gt;Lorem ipsum dolor sit amet consectetur&lt;/p&gt;
+                &lt;/article&gt;
+            &lt;/section&gt;
+        &lt;/main&gt;
+        &lt;footer&gt;
+            &lt;p&gt;Desenvolvido por Marcelo Ildefonso Campos&lt;/p&gt;
+        &lt;/footer&gt;
+    </pre
+            >
+        </code>
         <div class="foot">
             <hr />
             <footer>
