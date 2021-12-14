@@ -14,15 +14,32 @@
         />
         <link rel="stylesheet" href="../../css/style-modulo-02-pages.css" />
         <title>Border Radius</title>
+        <style>
+            h2 {
+                border-radius: 24px 0px;
+                box-shadow: 4px 4px 9px 0px rgba(56, 2, 251, 0.904);
+                background-color: gray;
+                font-size: 2.5em;
+                padding-left: 16px;
+            }
+            #bola {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                background-color: #fff;
+            }
+        </style>
     </head>
     <body>
         <h1>Exercício 030 - Border Radius</h1>
         <p><a href="./../../">Voltar para Módulo 02</a></p>
         <hr />
-        <!-- INÍCIO -->
-        <h2>Título de ...</h2>
-        <p>Lorem Texto Texto Texto</p>
-        <!-- FIM -->
+        <h2>Aqui tem border radius com box shadow</h2>
+        <p>Propriedade css border-radius: 12px; podemos arredondar cantos/vertices das caixas.</p>
+        <p>Configurações extras: border-radius: 12px 12px 12px 12px; onde cada 12px arredonda um canto da borda na seguinte ordem SUP ESQ | SUP DIR | INF DIR | INF ESQ. Nota: lembra um ponteiro de relógio em sentido horário.</p>
+        <p>Configurações extras: border-radius: 12px 12px; onde cada 12px arredonda dois canto das bordas na seguinte ordem SUP ESQ com INF DIR | SUP DIR com INF ESQ. Nota: lembra ligação de bordar num X.</p>
+        <p>border radius com 50% para criar uma bola</p>
+        <div id="bola"></div>
         <div class="foot">
             <hr />
             <footer>

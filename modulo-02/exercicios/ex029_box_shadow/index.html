@@ -14,15 +14,146 @@
         />
         <link rel="stylesheet" href="../../css/style-modulo-02-pages.css" />
         <title>Box Shadow</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: dimgray;
+                margin: 0px;
+            }
+            header {
+                width: auto;
+                background-color: #fff;
+                padding: 5px;
+                margin: 5px;
+            }
+            nav {
+                background-color: rgb(102, 102, 102);
+                padding: 6px;
+                margin: 3px;
+                height: 18px;
+                box-shadow: 5px 3px 6px 1px rgba(0, 0, 0, 0.5);
+                border-radius: 8px;
+            }
+            nav > a {
+                text-decoration: none;
+                color: #fff;
+                font-weight: bold;
+                margin-right: 10px;
+                border-style: groove;
+                border-radius: 10px;
+                border-color: #000;
+                padding: 3px;
+                box-shadow: 4px 4px 4px 2px #fff;
+            }
+            nav > a:hover {
+                text-decoration: underline;
+            }
+            main {
+                background-color: white;
+                padding: 5px;
+                margin: 5px;
+            }
+            article {
+                background-color: lightgray;
+                padding: 3px;
+            }
+            article > aside > span {
+                background-color: rgb(165, 165, 165);
+                margin: 2px;
+                padding: 2px;
+            }
+            li {
+                list-style: none;
+            }
+            h2 {
+                padding: 1px;
+                margin: 1px;
+            }
+            p {
+                padding: 1px;
+                margin: 1px;
+                color: #000;
+            }
+            a {
+                text-decoration: none;
+                color: #fff;
+                font-weight: bold;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            footer {
+                background-color: black;
+                text-align: center;
+                padding: 1px;
+                margin: 0px;
+            }
+            footer > p {
+                margin: 0px;
+                color: #fff;
+            }
+        </style>
     </head>
     <body>
         <h1>Exercício 029 - Box Shadow</h1>
         <p><a href="./../../">Voltar para Módulo 02</a></p>
         <hr />
-        <!-- INÍCIO -->
-        <h2>Título de ...</h2>
-        <p>Lorem Texto Texto Texto</p>
-        <!-- FIM -->
+        <h2>Sombras em HTML5</h2>
+        <header>
+            <h2>Meu Site</h2>
+            <nav>
+                <a href="">home</a>
+                <a href="">sobre</a>
+                <a href="">fotos</a>
+                <a href="">videos</a>
+                <a href="">contato</a>
+                <a href="">AQUI TEM BOX SHADOW</a>
+            </nav>
+        </header>
+        <main>
+            <section id="assuntos">
+                <article>
+                    <h2>Box Shadow Shorthand</h2>
+                    <p>
+                        Propriedade css box-shadow: 10px 10px 5px 5px black; com shorthand
+                    </p>
+                    <p>
+                        <li>10px descolamento horizontal</li>
+                        <li>10px descolamento vertical</li>
+                        <li>5px espalhamento da sombra</li>
+                        <li>5px alcance da sombra</li>
+                        <li>black cor da sombra</li>
+                        <li>Nota: na cor da sombra podemos inserir uma transparência, pois na vida real toda sombra não completamente preta, poi sempre tem sombra</li>
+                    </p>
+                </article>
+            </section>
+            <section id="noticias">
+                <article>
+                    <h2>Notícias sobre o Brasil</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Cumque labore voluptates quia doloremque quae sunt?
+                        facere dolore, eius modi debitis quo quasi dicta minima
+                        enim.
+                    </p>
+                    <aside>
+                        <span>Artigo escrito por josé da silva</span>
+                    </aside>
+                </article>
+                <article>
+                    <h2>Notícias sobre o Mundo</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Cumque labore voluptates quia doloremque quae sunt?
+                        facere dolore, eius modi debitis quo quasi dicta minima
+                        enim.
+                    </p>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p>Desenvolvido por Marcelo Ildefonso Campos</p>
+        </footer>
         <div class="foot">
             <hr />
             <footer>
